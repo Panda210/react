@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-debugger
+
 const Todo = ({ add, del, id, isDeleted, text }) => (
   <div>
     <div>

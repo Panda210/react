@@ -5,7 +5,7 @@ import TodoList from '../components/TodoList';
 
 
 const mapStateToProps = state => ({
-  todos: state.result ? state.result : [{id :1 ,text: '测试第1个数据', isDeleted: 'N'},{id :2 ,text: '测试第2个数据', isDeleted: 'N'}]
+  todos: state.todos ? state.todos : [{id :1 ,text: '测试第1个数据', isDeleted: 'N'},{id :2 ,text: '测试第2个数据', isDeleted: 'N'}]
 })
 
 const mapDispatchToProps = dispatch => ({

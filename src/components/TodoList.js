@@ -6,13 +6,18 @@ const TodoList = ({ todos, del, add, query }) => (
   <div>
     <div>
       <ul>
-        {todos.map(todo => (
-          <Todo 
-            key={todo.id} {...todo} 
-            del={() => del(todo.id)}
-            add={() => add()}
-          />
-        ))}
+        {
+          todos && todos.length > 0 ?
+            todos.map(todo => (
+              <Todo 
+                key={todo.id} {...todo} 
+                del={() => del(todo.id)}
+                add={() => add()}
+              /> 
+            ))
+          :
+            <button onClick={add}>添加</button>
+        }
       </ul>
     </div>
     <div>
