@@ -12,4 +12,4 @@ export const delActionSuccess = (data) => ({type: DEL_ACTION_SUCCESS, result: da
 export const QUERY_ACTION = Symbol('QUERY_ACTION');
 export const QUERY_ACTION_SUCCESS = Symbol('QUERY_ACTION_SUCCESS');
 export const queryAction = () => ({ type: QUERY_ACTION });
-export const queryActionSuccess = (data) => ({ type: QUERY_ACTION, result: data });
+export const queryActionSuccess = (data) => ({ type: QUERY_ACTION_SUCCESS, result: data });
